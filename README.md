@@ -32,7 +32,7 @@ Just add dependency in pom.xml
     	<version>5.2.6.Final</version>
     </dependency>
 ```
-And HiberanteConfiration.class will look like this:
+And HibernateConfiguration.class will look like this:
 
 ```
 @Configuration
