@@ -16,7 +16,8 @@ we have to use LocalSessionFactoryBean from the package org.springframework.orm.
 Like with Hibernate 4 before, we have to define beans for LocalSessionFactoryBean, DataSource, and PlatformTransactionManager,
 as well as some Hibernate-specific properties.
 
-See HibernateConfiguration.class for detail inforamtion how to configure hibernate with only Java code.
+See HibernateConfiguration.class for detail information how to configure hibernate with only Java code.
+You can use App.class to test the program
 
 
 Notes
@@ -84,3 +85,5 @@ public class HibernateConfig {
 
 
 ```
+
+
