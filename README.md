@@ -23,7 +23,7 @@ Notes
 ===========
 
 For dataSource I used Tomcat JDBC Connection Pooling(added dependency in pom.xml)
-If you want,uou can use c3p0 connetcion pool.
+If you want,you can use c3p0 connection pool.
 Just add dependency in pom.xml
 ```
  <dependency>
@@ -40,7 +40,7 @@ And HiberanteConfiration.class will look like this:
 public class HibernateConfig {
 
 	  @Bean
-    public ComboPooledDataSource dataSource() {
+    	public ComboPooledDataSource dataSource() {
         // a named datasource is best practice for later jmx monitoring
         ComboPooledDataSource dataSource = new ComboPooledDataSource("jupiter");
  
@@ -60,7 +60,7 @@ public class HibernateConfig {
         return dataSource;
     }
 	 @Bean
-	    public LocalSessionFactoryBean sessionFactory() {
+	 public LocalSessionFactoryBean sessionFactory() {
 	        LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
 	        sessionFactoryBean.setDataSource(dataSource());
 	        sessionFactoryBean.setPackagesToScan("spring_hibernate_integration.model");
@@ -72,8 +72,8 @@ public class HibernateConfig {
 	 
 	        return sessionFactoryBean;
 	    }
-	 	@Bean
-	    public HibernateTransactionManager transactionManager() {
+	 @Bean
+	  public HibernateTransactionManager transactionManager() {
 	        HibernateTransactionManager transactionManager =
 	                new HibernateTransactionManager();
 	        transactionManager.setSessionFactory(sessionFactory().getObject());
