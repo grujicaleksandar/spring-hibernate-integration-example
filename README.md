@@ -19,7 +19,7 @@ as well as some Hibernate-specific properties.**
 See HibernateConfiguration.class for detail information how to configure hibernate with only Java code.
 You can use App.class to test the program
 
-
+ 
 Notes
 ===========
 
