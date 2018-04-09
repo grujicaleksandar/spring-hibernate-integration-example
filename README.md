@@ -51,9 +51,9 @@ public class HibernateConfig {
             System.out.println("Cannot load datasource driver (" + "com.mysql.jdbc.Driver" +") : " + pve.getMessage());
             return null;
         }
-        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/game_shop");
-        dataSource.setUser("gamer");
-        dataSource.setPassword("gamerpass");
+        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/spring_hibernate_database");
+        dataSource.setUser("username");
+        dataSource.setPassword("password");
         dataSource.setMinPoolSize(5);
         dataSource.setMaxPoolSize(20);
         dataSource.setMaxIdleTime(600);
